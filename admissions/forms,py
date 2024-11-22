@@ -1,0 +1,6 @@
+from django import forms
+from.models import patient
+class patientForm(forms.ModelForm):
+    class Meta:
+        model=patient
+        fields=["First_name","Middle_name","Last_name","Id_number","Phone_number","Discharge_date","Patient_number"]
